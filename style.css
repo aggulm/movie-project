@@ -472,3 +472,315 @@ p.feedback-text {
   font-family: "Roboto Slab", serif;
   margin-bottom: 7%;
 }
+ /* font-family: "Roboto, sans-serif; */
+ /* font-family: "Roboto Slab", serif; */
+
+ body {
+     font-family: Roboto, sans-serif;
+     background-color: #fdfdfd;
+     color: black;
+     margin: 0;
+     padding: 0;
+     line-height: 1.6;
+     height: 100%;
+     min-height: 100vh;
+ }
+
+ .format {
+     font-family: "Roboto Slab", serif;
+     width: 85%;
+     margin: 60px auto;
+     text-align: center;
+     min-width: 285px;
+     max-width: 785px;
+ 
+
+
+ }
+
+ .format h2 {
+     font-family: "Roboto Slab", serif;
+     font-weight: bold;
+     margin-bottom: 50px;
+     margin-left: -63%;
+     color: black;
+
+ }
+
+ .grid-container {
+     display: grid;
+     column-gap: 0em;
+     
+
+ }
+
+ .grid-item {
+     max-width: 300px;
+     text-align: left;
+     margin-left: 2%;
+     gap: 10px;
+ }
+
+ .grid-item h4 {
+     color: #153a6d;
+     font-size: 24px;
+     margin-bottom: 10px;
+     display: inline-block;
+ }
+
+ .grid-item p {
+     color: black;
+     line-height: 150%;
+     width: 290px;
+     /* height: 90px; */
+     font-size: 18px;
+ }
+
+ .learn {
+     width: 85%;
+     min-width: 285px;
+     max-width: 785px;
+     margin: 60px auto;
+   
+ }
+
+ .learn h2 {
+     font-size: 55px;
+     font-weight: bold;
+     margin-bottom: 50px;
+     width: 311px;
+     height: 93px;
+     font-family: "Roboto Slab", serif;
+ }
+
+ .learn ul {
+     list-style-type: disc;
+     padding-left: 10px;
+     text-align: left;
+     width: 662px;
+     height: 374px;
+     font-size: 24px;
+     font-family: "Roboto", sans-serif;
+ }
+
+ .learn li {
+     font-size: 1em;
+     color: black;
+ }
+
+ /* 📱 SMARTFON: 300px - 600px */
+ @media (min-width: 300px) and (max-width: 600px) {
+     .grid-container {
+         grid-template-columns: 1fr;
+         margin-left: 8% !important;
+
+     }
+
+
+     .format h2,
+     .learn h2 {
+         font-size: 1.8em;
+         margin-left: 7% !important;
+         line-height: 101.4%;
+         max-width: 311px;
+         font-family: "Roboto Slab", sans-serif;
+         height: 68px;
+
+     }
+
+     .format h2 {
+         margin-left: 0 !important;
+     }
+
+     .learn h2 {
+         margin-bottom: 0;
+         margin-left: 7% !important;
+     }
+
+     .grid-item {
+         text-align: left;
+         margin-left: 1em auto;
+
+     }
+
+     .grid-item1 {
+         margin-top: -0.5em;
+         margin-bottom: 29px;
+     }
+
+     .grid-item2 {
+         margin-top: -0.5em;
+         margin-bottom: 38px;
+     }
+
+     .grid-item3 {
+         margin-top: -0.5em;
+        
+     }
+
+     .learn ul {
+         padding-left: 15px;
+         margin-left: 7% !important;
+       margin-bottom: 9.66px;
+     }
+
+     .learn {
+         padding-bottom: 4em;
+     }
+ }
+
+ /* 💻 TABLET: 601px - 1024px */
+ @media (min-width: 601px) and (max-width: 1024px) {
+     .grid-container {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .format h2{
+     
+         font-size: 2.2em;
+         margin-left: -10em !important;
+         
+
+
+     }
+     .grid-item1{
+        margin-top: 0%;
+        font-size: 11px !important ;
+        width: 150px !important;
+        height: 45px !important;
+        
+     }
+     .grid-item2{
+        margin-top: 0;
+        font-size: 11px !important;
+         width: 190px !important;
+        height: 40px !important;
+       
+     }
+     .grid-item3{
+        margin-top: 0;
+        font-size: 11px !important;
+        
+     }
+     .grid-item h4{
+        font-size: 15px !important;
+       
+     }
+    .grid-item{
+        width: 150px;
+    }
+
+    .item-2 {
+        margin-left: -1.5em;
+        width: 170px !important;
+        height: 63px !important;
+    }
+  
+    .item-1{
+       
+        width: 230px !important;
+        height: 63px !important;
+    }
+    .grid-item p{
+        font-size: 11px !important;
+        width: 175px !important;
+        height: 50px !important;
+    }
+    .learn h2{
+        font-size: 32px;
+        margin-right: 80% !important;
+        margin-top: 120px !important;
+        width: 386px !important;
+        height: 86px !important
+    }
+    .learn ul{
+        margin-bottom: 12px !important;
+        font-size: 14px !important;
+         width: 380px !important;
+        height: 250px !important;
+
+       
+    }
+}
+    
+ 
+
+ /* 🖥 DESKTOP: 1025px - 2100px */
+ @media (min-width: 1025px) and (max-width: 2100px) {
+     .grid-container {
+         grid-template-columns: repeat(3, 2fr);
+     }
+
+     .format h2{
+         font-size: 55px !important;
+        margin-left: -100% !important;
+        margin-bottom: 89px !important;
+     }
+     .grid-container{
+        margin-left: -30% !important;
+     }
+     .learn h2{
+        font-size: 55px !important;
+        margin-left: -30% !important;
+        width: 667px !important;
+        height: 93px !important;
+     }
+     .learn ul{
+        margin-left: -29% !important;
+        font-size: 24px !important;
+     }
+     .grid-item1{
+     font-size: 18px !important;
+    }
+
+     .grid-item2{
+        font-size: 18px !important;
+        
+
+     }
+   
+     
+     .grid-item h4{
+        font-size: 25px !important;
+     }
+     .learn h2{
+        margin-top: 179px !important;
+     }
+     .grid-item p{
+        margin-top: 0 !important;
+     }
+     .item-2{
+        margin-left: 122px !important;
+        margin-right: 0em !important;
+     }
+     .item-3{
+        margin-left: 113px !important;
+        
+     }
+
+     
+    }
+ .grid-item1 {
+     width: 223px;
+     height: 39px;
+     line-height: 1.6;
+     font-size: 18px;
+
+ }
+
+ .grid-item2 {
+     width: 271px;
+     height: 109px;
+     font-size: 18px;
+ }
+
+ .grid-item3 {
+     width: 271px;
+     height: 109px;
+     font-size: 18px;
+ }
+ @media (min-width: 779px) and (max-width:1024px){
+    .format h2{
+        margin-left: -63% !important;
+    }
+ }
