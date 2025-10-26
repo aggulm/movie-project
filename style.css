@@ -1,5 +1,477 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Roboto Slab", serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 100vw;
+}
+
+.format-grid-container {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3em;
+  align-items: stretch;
+  font-family: "Roboto", sans-serif;
+}
+
+.format-grid-container h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  padding-top: 1.7em;
+  padding-bottom: 1em;
+  font-size: clamp(26px, 4vw, 55px);
+  margin-left: 7%;
+}
+
+.genres {
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 13px -1px #c5c5c5;
+  box-shadow: 0px 0px 13px -1px #c5c5c5;
+  align-items: stretch;
+}
+
+.format-container-header {
+  line-height: 1.1;
+  font-weight: bold;
+  padding-top: 0.3em;
+  letter-spacing: -0.5px;
+}
+
+.genres p {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.genres-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-line {
+  display: block;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .format-types {
+    display: grid;
+    align-items: stretch;
+    justify-items: center;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .format-container-header {
+    font-size: 14px;
+  }
+
+  .genres {
+    width: 100%;
+    max-width: 185px;
+    height: 152px;
+    border-radius: 13.98px;
+  }
+
+  .genres img {
+    width: 185px;
+  }
+
+  .genres-info {
+    row-gap: 1em;
+  }
+
+  .genres-seminar {
+    row-gap: 0.1em !important;
+  }
+
+  .format-end {
+    font-size: 12px;
+  }
+
+  .feedback-container {
+    padding-bottom: 2em !important;
+  }
+
+  .feedback-container h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: clamp(26px, 4vw, 55px);
+    margin-left: 8% !important;
+    max-width: 257px;
+    line-height: 101.4%;
+  }
+
+  .feedback {
+    border-radius: 13.98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em !important;
+    margin-left: 8%;
+  }
+
+  .feedback-text {
+    line-height: 150%;
+    letter-spacing: 0.25px;
+  }
+
+  .feedback-person {
+    column-gap: 0.7em !important;
+  }
+
+  .feedback-person .avatar {
+    width: 80px;
+    height: 84px;
+  }
+
+  .person-name {
+    font-size: 14px;
+  }
+
+  .identity img {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .feedback {
+    margin-left: 7%;
+  }
+
+  .feedback-person {
+    margin-top: 1.5em !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .format-container-header {
+    font-size: 15px !important;
+  }
+
+  .format-types {
+    margin: 1em !important;
+  }
+
+  .format-end {
+    font-size: 13px;
+  }
+
+  .genres {
+    min-width: 131px;
+    width: 100%;
+    max-width: 171px !important;
+    border-radius: 17.38px;
+    min-height: 131px;
+    height: 45%;
+    max-height: 171px;
+  }
+
+  .genres img {
+    width: 100%;
+    max-width: 170px !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .format-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 1.5em;
+  }
+
+  .format-container-header {
+    font-size: 17px;
+  }
+
+  .genres {
+    width: 100%;
+    max-width: 231px;
+    height: 189px;
+    border-radius: 17.38px;
+  }
+
+  .genres img {
+    width: 231px;
+  }
+
+  .genres-info {
+    row-gap: 1.3em;
+  }
+
+  .genres-seminar {
+    row-gap: 0.3em !important;
+  }
+
+  .format-end {
+    font-size: 14px;
+  }
+
+  .feedback {
+    border-radius: 17.38px;
+    margin-left: 7.5%;
+    width: 60% !important;
+  }
+
+  p.feedback-text {
+    padding-right: 1em;
+  }
+
+  .feedback-person {
+    column-gap: 1.5em !important;
+  }
+
+  .feedback-person .avatar {
+    width: 110px;
+    height: 98px;
+  }
+
+  .person-name {
+    font-size: 17px;
+  }
+
+  .identity img {
+    width: 25px;
+    height: 26px;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1439px) {
+  .format-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin: 1.5em;
+  }
+
+  .format-grid-container h2,
+  .feedback-container h2 {
+    margin-left: 8% !important;
+  }
+
+  .format-container-header {
+    font-size: 1.5em !important;
+  }
+
+  .format-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5%;
+  }
+
+  .format-end {
+    font-size: 1.3em !important;
+    padding-bottom: 1em;
+  }
+
+  .genres {
+    min-width: 231px;
+    max-width: 399px;
+    height: auto !important;
+    border-radius: 30px;
+  }
+
+  .genres-info {
+    row-gap: 1em !important;
+  }
+
+  .genres img {
+    width: 100%;
+    max-width: 399px;
+    max-height: 160px;
+  }
+
+  .feedback {
+    margin-left: 8.5% !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2100px) {
+  .format-grid-container h2,
+  .feedback-container h2 {
+    margin-left: 9% !important;
+  }
+
+  .format-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 5%;
+  }
+
+  .format-container-header {
+    font-size: 30px;
+  }
+
+  .genres {
+    width: 100%;
+    max-width: 399px;
+    height: 100%;
+    max-height: 328px;
+    border-radius: 30px;
+  }
+
+  .genres img {
+    width: 100%;
+    max-width: 399px;
+    height: 100%;
+    max-height: 160px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .genres-info {
+    row-gap: 2em;
+  }
+
+  .genres-seminar {
+    row-gap: 0.5em !important;
+  }
+
+  .format-end {
+    font-size: clamp(14px, 2vw, 25px);
+  }
+
+  .feedback-container {
+    height: 100%;
+    max-height: 780px;
+  }
+
+  .feedback {
+    margin-left: 9%;
+    border-radius: 30px;
+  }
+
+  .person-name {
+    font-size: 30px;
+  }
+
+  .identity img {
+    width: 32px;
+    height: 31px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .format-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 5%;
+  }
+
+  .genres {
+    width: 100%;
+    max-width: 399px;
+    height: 328px;
+    border-radius: 30px;
+    margin-left: 4%;
+  }
+
+  .genres img {
+    width: 100%;
+    max-width: 399px;
+    height: 100%;
+    max-height: 160px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .format-end {
+    font-size: 25px;
+  }
+
+  .feedback {
+    border-radius: 30px;
+  }
+
+  .feedback-text {
+    font-size: 20px;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+.feedback-container {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  font-family: "Roboto", sans-serif;
+  margin-top: 7%;
+  padding-bottom: 6em;
+  width: 100vw;
+}
+
+.feedback {
+  display: grid;
+  background-color: white;
+  border: 1px solid lightgrey;
+  padding: 2.7% 1.5% 2.5% 2.5%;
+  -webkit-box-shadow: 0px 0px 13px -1px #c5c5c5;
+  box-shadow: 0px 0px 13px -1px #c5c5c5;
+  min-width: 285px;
+  width: 85%;
+  max-width: 791px;
+  min-height: 250px;
+  height: 85%;
+  max-height: 451px;
+}
+
+.feedback-container h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  font-size: clamp(26px, 4vw, 55px);
+  margin-left: 7%;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback-person {
+  display: flex;
+  column-gap: 2.1em;
+  margin-top: 4%;
+  margin-left: -2%;
+}
+
+.feedback-text {
+  font-size: clamp(10px, 1.5vw, 20px);
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  min-width: 265px;
+  width: 100%;
+  max-width: 730px;
+  min-height: 110px;
+  height: 55%;
+  max-height: 205px;
+}
+
+p.feedback-text {
+  padding-top: 0.5em;
+}
+
+.person-name {
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 7%;
+}
  /* font-family: "Roboto, sans-serif; */
  /* font-family: "Roboto Slab", serif; */
 
