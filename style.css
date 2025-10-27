@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-  
  body {
      font-family: Roboto, sans-serif;
      background-color: #fdfdfd;
@@ -1347,3 +1346,205 @@ p.feedback-text {
   font-family: "Roboto Slab", serif;
   margin-bottom: 7%;
 }
+
+/* ------------------------------------------------*/
+
+}
+.course-info {
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 60px 80px;
+  background-color: #a6c1bb;
+  flex: 1;
+}
+
+.course-info h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.price-label {
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0 50px;
+}
+
+.details {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.block {
+  max-width: 320px;
+}
+
+.block h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.block p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.highlight {
+  padding: 5px 8px;
+  display: inline-block;
+  background-color: #a6c1bb;
+}
+
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+
+.footer .left {
+  max-width: 300px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.socials a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.footer .right p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+
+@media (max-width: 600px) {
+  .course-info {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .course-info h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .block {
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .footer .right {
+    margin-top: 25px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .course-info {
+    padding: 50px 40px;
+  }
+
+  .course-info h1 {
+    font-size: 1.9rem;
+  }
+
+  .details {
+    gap: 40px;
+    justify-content: space-around;
+  }
+
+  .block {
+    max-width: 45%;
+  }
+
+  .price {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .footer .left,
+  .footer .right {
+    width: 45%;
+    text-align: left;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 2100px) {
+  .course-info {
+    padding: 80px 150px;
+  }
+
+  .course-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .details {
+    justify-content: flex-start;
+    gap: 100px;
+  }
+
+  .block {
+    max-width: 350px;
+  }
+
+  .footer {
+    padding: 60px 150px;
+  }
+
+  .footer .left,
+  .footer .right {
+    width: auto;
+  }
+}
+
