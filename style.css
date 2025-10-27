@@ -1,17 +1,892 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* font-family: "Roboto", sans-serif; */
-/* font-family: "Roboto Slab", serif; */
+  
+ body {
+     font-family: Roboto, sans-serif;
+     background-color: #fdfdfd;
+     color: black;
+     line-height: 1.6;
+     height: 100%;
+     min-height: 100vh;
+ }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  min-width: 100vw;
+header {
+  margin: 10vw 7vw 0 7vw;
+  width: auto;
 }
+
+.header-sinxro {
+  width: 14vw;
+  height: 8vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-flex {
+  margin-top: 10%;
+  display: flex;
+  gap: clamp(10px, 6vw, 50px);
+}
+
+.header-x {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-photo {
+  width: 3vw;
+  height: 2.9vw;
+  max-width: 100%;
+}
+.header-text {
+  font-size: clamp(7px, 3vw, 20px) / clamp(8px, 2vw, 15px);
+  margin-left: 3px;
+  text-align: center;
+}
+main {
+  margin: 3vw 7vw 0 7vw;
+  width: auto;
+}
+
+.section1 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.main-text-bold {
+  font-size: clamp(30px, 7vw, 76px);
+  font-weight: bold;
+  margin: 0px;
+  padding-top: 10px;
+  font-family: "Roboto Slab", serif;
+  width: 72vw;
+
+  line-height: 90%;
+}
+.main-paragraph {
+  font-size: clamp(9px, 2vw, 15px);
+  width: 70vw;
+}
+.fmain-text {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  gap: 2vw;
+}
+
+.fcameraman {
+  width: 93%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aseated-cameraman {
+  width: 49vw;
+  max-width: 190px;
+  height: auto;
+}
+
+.blue-img-div {
+  width: 80vw;
+}
+
+.blue-img {
+  width: 66%;
+  max-width: 600px;
+  height: auto;
+  margin: 40px auto 0 0;
+  display: block;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  header {
+    margin: 6vw 7vw 0 7vw;
+    width: auto;
+  }
+  .header-text {
+    font-size: clamp(7px, 3vw, 20px) / clamp(11px, 2vw, 18px);
+    margin-left: 3px;
+    text-align: center;
+  }
+  .header-photo {
+    width: 1.8vw;
+    height: 1.8vw;
+    max-width: 100%;
+  }
+
+  .section1 {
+    width: 80vw;
+    display: flex;
+    gap: 7vw;
+    flex-wrap: nowrap;
+  }
+
+  .fmain-text {
+    width: 64%;
+    gap: 8%;
+  }
+  .main-paragraph {
+    font-size: clamp(11px, 2vw, 18px);
+  }
+
+  .fcameraman {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .blue-img-div {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .blue-img {
+    margin: 55px 0 0 0;
+    width: 54%;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 2100px) {
+  header {
+    margin: 3vw 10vw 0 10vw;
+    width: auto;
+  }
+
+  .header-sinxro {
+    width: 10vw;
+    height: 7vw;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header-photo {
+    width: 2vw;
+    height: 2vw;
+    max-width: 100%;
+  }
+
+  .header-text {
+    font-size: clamp(7px, 3vw, 20px) / clamp(20px, 5vw, 24px);
+    margin-left: 3px;
+    text-align: center;
+  }
+  .main-paragraph {
+    font-size: clamp(20px, 5vw, 23px);
+  }
+
+  .main-text-bold {
+    font-size: clamp(35px, 8vw, 120px);
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 10px;
+    font-family: "Roboto Slab", serif;
+    width: 70vw;
+    line-height: 80%;
+  }
+  .header-x {
+    gap: 10px;
+  }
+  main {
+    margin: 3vw 10vw 0 10vw;
+    width: auto;
+  }
+
+  .section1 {
+    width: 70vw;
+    display: flex;
+    gap: 6vw;
+    flex-wrap: nowrap;
+  }
+
+  .fmain-text {
+    width: 54vw;
+    gap: 8%;
+  }
+  .fcameraman {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .aseated-cameraman {
+    width: 50vw;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .blue-img-div {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .blue-img {
+    margin: 55px 0 0 0;
+    width: 65%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1290px) {
+  .aseated-cameraman {
+    width: 50vw;
+    max-width: 280px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 2100px) {
+  .section1 {
+    gap: 0.1vw;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  
+  header {
+    margin: 5vw 8vw 0 8vw;
+  }
+
+  .header-sinxro {
+    width: 12vw;
+    height: auto;
+  }
+
+  .header-photo {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .header-text {
+    font-size: 16px;
+  }
+
+  main {
+    margin: 4vw 8vw 0 8vw;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+  }
+
+  .fmain-text {
+    flex: 1;
+    max-width: 50%;
+    margin-top: -170px;
+  }
+
+  .main-text-bold {
+    font-size: clamp(45px, 8vw, 70px);
+    line-height: 90%;
+  }
+
+  .main-paragraph {
+    font-size: clamp(16px, 2.5vw, 20px);
+  }
+
+  .fcameraman {
+    flex: 0 0 40%;
+    justify-content: flex-end;
+    margin-left: 200px;
+    
+    
+  }
+
+  .aseated-cameraman {
+    width: 100%;
+    max-width: 350px;
+    
+  }
+
+  .blue-img-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .blue-img {
+    width: 60%;
+    max-width: 500px;
+    margin: 0 0 50px 140px;
+  }
+}
+
+.container1 h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 101%;
+  margin: 3.3em 0 1.3em 0;
+}
+
+.container1 .left-part1 {
+  margin-bottom: 1.5em;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about img {
+  min-width: 165px;
+  width: 95%;
+  max-width: 350px;
+  height: auto;
+}
+
+.about p {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.lessons {
+  margin-top: 60px;
+  display: grid;
+  margin-bottom: 200px;
+  font-family: "Roboto", sans-serif;
+}
+
+.lessons img {
+  min-width: 200px;
+  width: 95%;
+  max-width: 245px;
+  height: auto;
+}
+
+.lessons h4 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.lessons p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  margin: 0;
+  width: 150px;
+}
+
+.lessons-format {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  margin-bottom: 250px;
+  font-family: "Roboto", sans-serif;
+}
+
+.lessons-format h4 {
+  color: #1e4681;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  header, main{
+    margin-left: 2em;
+  }
+  
+    .header-text {
+    font-size: 12px !important;
+  }
+  .container1 h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 101%;
+    margin: 3.3em 0 1.3em 0;
+  }
+
+  .about .left-part1 {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 90%;
+  }
+
+  .about .left-part2 {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 85%;
+  }
+
+  .about .left-part2 {
+    margin-bottom: 2.1em;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lessons img {
+    display: none;
+  }
+
+  .lessons section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    margin-left: 0 !important;
+  }
+
+  .lessons p {
+    font-size: 10px;
+    width: 55%;
+  }
+
+  .lessons section h4 {
+    font-size: 12px;
+    margin-bottom: .3em;
+  }
+
+  .lessons-part2 {
+    margin-left: -2.7em;
+  }
+
+  .lessons-part3{
+    margin-top: .3em;
+  }
+
+  .about img {
+    min-width: 200px;
+    width: 60%;
+    max-width: 245px;
+    height: auto;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container1 {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .container1 h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px; /* Arttırdım */
+    margin-bottom: 60px;
+  }
+
+  .about .left {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+  .about .left .left-part1,
+  .about .left .left-part2 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .about .right {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-end; /* Sağa yasladım */
+    align-items: flex-start;
+    margin-left: auto; /* Ekstra sağa itme */
+    margin-top: 0%;
+  }
+
+  .about .right img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .lessons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 100px;
+  }
+
+  .lessons > div:first-child {
+    flex: 0 0 180px;
+    margin-top: -50px;
+  }
+
+  .lessons > div:first-child img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lessons section {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .lessons section > div {
+    flex: 1;
+  }
+
+  .lessons-part2,
+  .lessons-part3 {
+    flex: 1;
+  }
+
+  .lessons section h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .lessons section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+  
+
+@media screen and (min-width: 1025px) and (max-width: 2100px) {
+  .lessons {
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+  }
+
+  .lessons section {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    margin-left: 150px;
+  }
+
+  .left {
+    width: 662px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.format {
+  font-family: "Roboto Slab", serif;
+  width: 85%;
+  margin: 60px auto;
+  text-align: center;
+  min-width: 285px;
+  max-width: 785px;
+}
+
+.format h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-left: -63%;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 0em;
+}
+
+.grid-item {
+  max-width: 300px;
+  text-align: left;
+  margin-left: 2%;
+  gap: 10px;
+}
+
+.grid-item h4 {
+  color: #153a6d;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.grid-item p {
+  color: black;
+  line-height: 150%;
+  width: 290px;
+  /* height: 90px; */
+  font-size: 18px;
+}
+
+.learn {
+  width: 85%;
+  min-width: 285px;
+  max-width: 785px;
+  margin: 60px auto;
+}
+
+.learn h2 {
+  font-weight: bold;
+  margin-bottom: 50px;
+  width: 311px;
+  /* height: 93px; */
+  font-family: "Roboto Slab", serif;
+}
+
+.learn ul {
+  list-style-type: disc;
+  padding-left: 10px;
+  text-align: left;
+  width: 662px;
+  /* height: 374px; */
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.learn li {
+  font-size: 1em;
+  color: black;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 0.6fr;
+    margin-left: 8% !important;
+  }
+
+  .format h2,
+  .learn h2 {
+    font-size: 26px;
+    margin-left: 7% !important;
+    line-height: 101.4%;
+    max-width: 311px;
+    font-family: "Roboto Slab", sans-serif;
+  }
+
+  .format {
+    margin-bottom: 3em;
+    margin-left: 0em;
+  }
+
+  .learn {
+    margin-left: 0em;
+  }
+
+  .format h2 {
+    margin-left: -4% !important;
+  }
+
+  .learn h2 {
+    margin-left: 7% !important;
+    margin-bottom: 1.5em;
+  }
+
+  .grid-item {
+    text-align: left;
+    margin-left: 1em auto;
+  }
+
+  .grid-item h4 {
+    font-size: 12px;
+  }
+
+  .grid-item p {
+    font-size: 10px;
+  }
+
+  .grid-item1 {
+    margin-top: -0.5em;
+    margin-bottom: 29px;
+  }
+
+  .item-1 {
+    width: 40%;
+  }
+
+  .grid-item1 {
+    width: 60vw !important;
+  }
+
+  .grid-item2 {
+    margin-top: -0.5em;
+    margin-bottom: 38px;
+    height: auto;
+    width: 47vw !important;
+  }
+
+  .grid-item3 {
+    margin-top: -0.5em;
+    width: 50vw !important;
+  }
+
+  .learn ul {
+    padding-left: 15px;
+    margin-left: 7% !important;
+    margin-bottom: 9.66px;
+  }
+
+  .learn ul {
+    font-size: 12px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .format h2 {
+    font-size: 2.2em;
+    margin-left: -10em !important;
+  }
+  .grid-item1 {
+    margin-top: 0%;
+    font-size: 11px !important ;
+    width: 150px !important;
+  }
+  .grid-item2 {
+    margin-top: 0;
+    font-size: 11px !important;
+    width: 190px !important;
+  }
+  .grid-item3 {
+    margin-top: 0;
+    font-size: 11px !important;
+  }
+  .grid-item h4 {
+    font-size: 15px !important;
+  }
+  .grid-item {
+    width: 150px;
+  }
+
+  .item-2 {
+    width: 170px !important;
+    margin-left: -.5em;
+  }
+
+  .item-1 {
+    width: 230px !important;
+  }
+
+  .grid-item p {
+    font-size: 11px !important;
+    width: 175px !important;
+  }
+
+  .learn h2 {
+    font-size: 32px;
+    margin-top: 120px !important;
+    width: 386px !important;
+    margin-bottom: 1em;
+  }
+  .learn ul {
+    margin-bottom: 12px !important;
+    font-size: 14px !important;
+    width: 380px !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 2100px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 2fr);
+  }
+
+  .format h2 {
+    font-size: 55px !important;
+    margin-left: -100% !important;
+    margin-bottom: 89px !important;
+  }
+  .grid-container {
+    margin-left: -30% !important;
+  }
+  .learn h2 {
+    font-size: 55px !important;
+    margin-left: -30% !important;
+    width: 667px !important;
+    height: 93px !important;
+  }
+  .learn ul {
+    margin-left: -29% !important;
+    font-size: 24px !important;
+  }
+  .grid-item1 {
+    font-size: 18px !important;
+  }
+
+  .grid-item2 {
+    font-size: 18px !important;
+  }
+
+  .grid-item h4 {
+    font-size: 25px !important;
+  }
+  .learn h2 {
+    margin-top: 179px !important;
+  }
+  .grid-item p {
+    margin-top: 0 !important;
+  }
+  .item-2 {
+    margin-left: 122px !important;
+    margin-right: 0em !important;
+  }
+  .item-3 {
+    margin-left: 113px !important;
+  }
+}
+.grid-item1 {
+  width: 223px;
+  height: 39px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.grid-item2 {
+  width: 271px;
+  /* height: 109px; */
+  font-size: 18px;
+}
+
+.grid-item3 {
+  width: 271px;
+  /* height: 109px; */
+  font-size: 18px;
+}
+@media (min-width: 779px) and (max-width: 1024px) {
+  .format h2 {
+    margin-left: -63% !important;
+  }
+}
+
+/* ------------------------------------------------------------------------------------ */
 
 .format-grid-container {
   font-family: "Roboto", sans-serif;
@@ -472,315 +1347,3 @@ p.feedback-text {
   font-family: "Roboto Slab", serif;
   margin-bottom: 7%;
 }
- /* font-family: "Roboto, sans-serif; */
- /* font-family: "Roboto Slab", serif; */
-
- body {
-     font-family: Roboto, sans-serif;
-     background-color: #fdfdfd;
-     color: black;
-     margin: 0;
-     padding: 0;
-     line-height: 1.6;
-     height: 100%;
-     min-height: 100vh;
- }
-
- .format {
-     font-family: "Roboto Slab", serif;
-     width: 85%;
-     margin: 60px auto;
-     text-align: center;
-     min-width: 285px;
-     max-width: 785px;
- 
-
-
- }
-
- .format h2 {
-     font-family: "Roboto Slab", serif;
-     font-weight: bold;
-     margin-bottom: 50px;
-     margin-left: -63%;
-     color: black;
-
- }
-
- .grid-container {
-     display: grid;
-     column-gap: 0em;
-     
-
- }
-
- .grid-item {
-     max-width: 300px;
-     text-align: left;
-     margin-left: 2%;
-     gap: 10px;
- }
-
- .grid-item h4 {
-     color: #153a6d;
-     font-size: 24px;
-     margin-bottom: 10px;
-     display: inline-block;
- }
-
- .grid-item p {
-     color: black;
-     line-height: 150%;
-     width: 290px;
-     /* height: 90px; */
-     font-size: 18px;
- }
-
- .learn {
-     width: 85%;
-     min-width: 285px;
-     max-width: 785px;
-     margin: 60px auto;
-   
- }
-
- .learn h2 {
-     font-size: 55px;
-     font-weight: bold;
-     margin-bottom: 50px;
-     width: 311px;
-     height: 93px;
-     font-family: "Roboto Slab", serif;
- }
-
- .learn ul {
-     list-style-type: disc;
-     padding-left: 10px;
-     text-align: left;
-     width: 662px;
-     height: 374px;
-     font-size: 24px;
-     font-family: "Roboto", sans-serif;
- }
-
- .learn li {
-     font-size: 1em;
-     color: black;
- }
-
- /* 📱 SMARTFON: 300px - 600px */
- @media (min-width: 300px) and (max-width: 600px) {
-     .grid-container {
-         grid-template-columns: 1fr;
-         margin-left: 8% !important;
-
-     }
-
-
-     .format h2,
-     .learn h2 {
-         font-size: 1.8em;
-         margin-left: 7% !important;
-         line-height: 101.4%;
-         max-width: 311px;
-         font-family: "Roboto Slab", sans-serif;
-         height: 68px;
-
-     }
-
-     .format h2 {
-         margin-left: 0 !important;
-     }
-
-     .learn h2 {
-         margin-bottom: 0;
-         margin-left: 7% !important;
-     }
-
-     .grid-item {
-         text-align: left;
-         margin-left: 1em auto;
-
-     }
-
-     .grid-item1 {
-         margin-top: -0.5em;
-         margin-bottom: 29px;
-     }
-
-     .grid-item2 {
-         margin-top: -0.5em;
-         margin-bottom: 38px;
-     }
-
-     .grid-item3 {
-         margin-top: -0.5em;
-        
-     }
-
-     .learn ul {
-         padding-left: 15px;
-         margin-left: 7% !important;
-       margin-bottom: 9.66px;
-     }
-
-     .learn {
-         padding-bottom: 4em;
-     }
- }
-
- /* 💻 TABLET: 601px - 1024px */
- @media (min-width: 601px) and (max-width: 1024px) {
-     .grid-container {
-         grid-template-columns: repeat(3, 1fr);
-     }
-
-     .format h2{
-     
-         font-size: 2.2em;
-         margin-left: -10em !important;
-         
-
-
-     }
-     .grid-item1{
-        margin-top: 0%;
-        font-size: 11px !important ;
-        width: 150px !important;
-        height: 45px !important;
-        
-     }
-     .grid-item2{
-        margin-top: 0;
-        font-size: 11px !important;
-         width: 190px !important;
-        height: 40px !important;
-       
-     }
-     .grid-item3{
-        margin-top: 0;
-        font-size: 11px !important;
-        
-     }
-     .grid-item h4{
-        font-size: 15px !important;
-       
-     }
-    .grid-item{
-        width: 150px;
-    }
-
-    .item-2 {
-        margin-left: -1.5em;
-        width: 170px !important;
-        height: 63px !important;
-    }
-  
-    .item-1{
-       
-        width: 230px !important;
-        height: 63px !important;
-    }
-    .grid-item p{
-        font-size: 11px !important;
-        width: 175px !important;
-        height: 50px !important;
-    }
-    .learn h2{
-        font-size: 32px;
-        margin-right: 80% !important;
-        margin-top: 120px !important;
-        width: 386px !important;
-        height: 86px !important
-    }
-    .learn ul{
-        margin-bottom: 12px !important;
-        font-size: 14px !important;
-         width: 380px !important;
-        height: 250px !important;
-
-       
-    }
-}
-    
- 
-
- /* 🖥 DESKTOP: 1025px - 2100px */
- @media (min-width: 1025px) and (max-width: 2100px) {
-     .grid-container {
-         grid-template-columns: repeat(3, 2fr);
-     }
-
-     .format h2{
-         font-size: 55px !important;
-        margin-left: -100% !important;
-        margin-bottom: 89px !important;
-     }
-     .grid-container{
-        margin-left: -30% !important;
-     }
-     .learn h2{
-        font-size: 55px !important;
-        margin-left: -30% !important;
-        width: 667px !important;
-        height: 93px !important;
-     }
-     .learn ul{
-        margin-left: -29% !important;
-        font-size: 24px !important;
-     }
-     .grid-item1{
-     font-size: 18px !important;
-    }
-
-     .grid-item2{
-        font-size: 18px !important;
-        
-
-     }
-   
-     
-     .grid-item h4{
-        font-size: 25px !important;
-     }
-     .learn h2{
-        margin-top: 179px !important;
-     }
-     .grid-item p{
-        margin-top: 0 !important;
-     }
-     .item-2{
-        margin-left: 122px !important;
-        margin-right: 0em !important;
-     }
-     .item-3{
-        margin-left: 113px !important;
-        
-     }
-
-     
-    }
- .grid-item1 {
-     width: 223px;
-     height: 39px;
-     line-height: 1.6;
-     font-size: 18px;
-
- }
-
- .grid-item2 {
-     width: 271px;
-     height: 109px;
-     font-size: 18px;
- }
-
- .grid-item3 {
-     width: 271px;
-     height: 109px;
-     font-size: 18px;
- }
- @media (min-width: 779px) and (max-width:1024px){
-    .format h2{
-        margin-left: -63% !important;
-    }
- }
